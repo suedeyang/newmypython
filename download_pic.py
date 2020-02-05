@@ -20,11 +20,11 @@ def get_photothread(folder_name,photo_name,photo_list):
     for i in range(Q):
         threads=[]
         for j in range(100):
-            threads.append(threading.Tread(target=download_pic,args=(photo_list[i],folder_name+os.sep+photo_name+os.sep+str(i*100+j+1)))
+            threads.append(threading.THread(target=download_pic,args=(photo_list[i*100+j],folder_name+os.sep+photo_name+os.sep+str(i*100+j+1)))
             threads[j].start()               
         for j in threads:
             j.join()
-        print(int(i+1)*100/download_num*100),"%"
+        print(int((i+1)*100/download_num*100),"%"
                            
 '''                           
 
@@ -37,7 +37,7 @@ def create_folder(photo_name):
     else:
         print("找到資料夾"+folder_name)
     if not os.path.exists(folder_name+os.sep+photo_name):
-        os.mkdir(folder_name+os.sep+photo_name)
+        os.mkdir(folder_name+os.sep+photo_name) #os.sep 作業系統的路徑分隔資料 
         print('建立資料夾'+photo_name)
     else:
         print(photo_name+"已經存在")
@@ -45,7 +45,7 @@ def create_folder(photo_name):
     
 def download_pic(url,path):
     pic=requests.get(url)
-    path += url[url.rfind("."):]
+    path += url[url.rfind("."):] #副檔名
     f=open(path,'wb')
     f.write(pic.content)
     f.close()

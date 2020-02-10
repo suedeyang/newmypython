@@ -9,7 +9,7 @@ from pytube import YouTube
 from tkinter import messagebox
 import requests
 from bs4 import BeautifulSoup
-import threading
+#import threading
 
 def click_func():
     url=yt_url.get()

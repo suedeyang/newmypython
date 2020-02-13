@@ -31,7 +31,7 @@ def yget_dl(url,itag=None):
     cmd='you-get ' #語法的關係要加上空白
     if itag:
         cmd=cmd+'--itag='+ itag + ' '#語法的關係要加上空白
-    process=subprocess.Popen(cmd+url)
+    process=sp.Popen(cmd+url)
     process.wait()
     return process.returncode
     
@@ -46,4 +46,3 @@ print('下載高品質:','OK' if r == 0 else 'Error')
 
 r=yget_dl(url)
 print('下載一般品質','OK' if r == 0 else 'Error')
-yget_dl(url,itag)

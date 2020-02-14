@@ -19,7 +19,7 @@ df.columns=['datetime','twd']
 #print(df.head(1))
 
 df['datetime']=pd.to_datetime(df['datetime'], unit='ms')
-#print(df.head(1))
+print(df.head())
 
 
 df.index=df['datetime']

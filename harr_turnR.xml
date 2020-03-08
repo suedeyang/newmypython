@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<harr_turnR type_id="opencv-haar-classifier">
+  <size>
+    50 50</size>
+  <stages>
+    <_>
+      <trees>
+        <_>
+          <_>
+            <feature>
+              <rects>
+                <_>
+                  0 0 8 34 -1.</_>
+                <_>
+                  2 0 4 34 2.</_></rects>
+              <tilted>0</tilted></feature>
+            <threshold>-0.0281204506754875</threshold>
+            <left_val>1.</left_val>
+            <right_val>-0.9999995827674866</right_val></_></_></trees>
+      <stage_threshold>1.</stage_threshold>
+      <parent>-1</parent>
+      <next>-1</next></_>
+    <_>
+      <trees>
+        <_>
+          <_>
+            <feature>
+              <rects>
+                <_>
+                  0 0 37 24 -1.</_>
+                <_>
+                  0 6 37 12 2.</_></rects>
+              <tilted>0</tilted></feature>
+            <threshold>-0.1069376021623612</threshold>
+            <left_val>1.</left_val>
+            <right_val>-0.9999995231628418</right_val></_></_></trees>
+      <stage_threshold>1.</stage_threshold>
+      <parent>0</parent>
+      <next>-1</next></_>
+    <_>
+      <trees>
+        <_>
+          <_>
+            <feature>
+              <rects>
+                <_>
+                  0 0 2 50 -1.</_>
+                <_>
+                  0 0 1 25 2.</_>
+                <_>
+                  1 25 1 25 2.</_></rects>
+              <tilted>0</tilted></feature>
+            <threshold>-2.4124900810420513e-003</threshold>
+            <left_val>1.</left_val>
+            <right_val>-0.9999998211860657</right_val></_></_></trees>
+      <stage_threshold>1.</stage_threshold>
+      <parent>1</parent>
+      <next>-1</next></_>
+    <_>
+      <trees>
+        <_>
+          <_>
+            <feature>
+              <rects>
+                <_>
+                  0 0 46 2 -1.</_>
+                <_>
+                  0 0 23 1 2.</_>
+                <_>
+                  23 1 23 1 2.</_></rects>
+              <tilted>0</tilted></feature>
+            <threshold>-3.3162289764732122e-003</threshold>
+            <left_val>1.</left_val>
+            <right_val>-0.9999995231628418</right_val></_></_></trees>
+      <stage_threshold>1.</stage_threshold>
+      <parent>2</parent>
+      <next>-1</next></_></stages></harr_turnR>
+</opencv_storage>

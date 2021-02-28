@@ -23,6 +23,6 @@ def db_save(db,name):
     print('儲存成功')
     
     
-db_save('mydatabase.sqlite','單單')
+db_save('mydatabase.sqlite','洋洋')
 
             

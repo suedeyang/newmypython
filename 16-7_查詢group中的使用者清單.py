@@ -7,7 +7,7 @@ Created on Sun Jun 14 11:12:23 2020
 
 import requests
 base='https://yangface.cognitiveservices.azure.com/face/v1.0'
-key='51cc59e80c7345459a362a5328255b34'
+key=''
 headers_json={'Ocp-Apim-Subscription-Key': key ,'Contect-Type':'application/json'}
 
 

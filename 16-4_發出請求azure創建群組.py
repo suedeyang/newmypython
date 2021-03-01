@@ -9,7 +9,7 @@ Created on Sun May 31 15:14:14 2020
 import requests
 base='https://yangface.cognitiveservices.azure.com/face/v1.0'
 gp_url= base + '/persongroups/gp01'
-key='51cc59e80c7345459a362a5328255b34'
+key=''
 
 
 

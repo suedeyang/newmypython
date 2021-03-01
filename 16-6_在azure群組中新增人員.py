@@ -10,7 +10,7 @@ import requests
 base='https://yangface.cognitiveservices.azure.com/face/v1.0'
 pson_url= base + '/persongroups/gp01/persons'
 
-key='51cc59e80c7345459a362a5328255b34'
+key=''
 
 headers_json={'Ocp-Apim-Subscription-Key': key ,'Contect-Type':'application/json'}
 body={'name':'周詠','userData':'苗栗人'}

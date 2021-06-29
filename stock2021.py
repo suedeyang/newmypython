@@ -28,4 +28,4 @@ v3,v4=get_best('1325')
 send_ifttt(v1,v2,v3)
 
 #print(name,price,act,why,sep="|")
-# %%
+

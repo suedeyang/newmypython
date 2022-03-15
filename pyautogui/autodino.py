@@ -14,6 +14,7 @@ while True:
     if screen[0]==255:
         if x4[0]==83 or x1[0]==83 or x2[0]==83 or x3[0]==83 or x4[0]==83:
             pyautogui.press('space')
+            print("jump")
             time.sleep(0.0001)
 
 

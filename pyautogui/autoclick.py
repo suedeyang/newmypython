@@ -7,4 +7,4 @@ while True:
         pyautogui.click(button7location)
     #time.sleep(5)
     #pyautogui.scroll(3)
-    pyautogui.PAUSE=100
+    pyautogui.PAUSE=150

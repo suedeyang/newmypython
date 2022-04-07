@@ -23,3 +23,5 @@ b2.metric("Wind", "9 mph", "-8%")
 b3.metric("Humidity", "86%", "4%")
 b4.metric("Humidity", "86%", "4%")
 
+#抓取網站資料
+url='https://covid-19.nchc.org.tw/city_confirmed.php?mycity=%E9%AB%98%E9%9B%84%E5%B8%82'

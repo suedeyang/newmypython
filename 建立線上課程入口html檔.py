@@ -8,6 +8,14 @@ html1='''
     </head>
 <body>
 <script>
+    function copy_and_go(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+        window.open('https://classroom.google.com/a/mail.lhps.kh.edu.tw/')
+    }
+    
     function copyEvent(id)
     {
         var str = document.getElementById(id);
@@ -49,14 +57,14 @@ GoogleClassroom 進行線上課程</strong>
       <div class="modal-body">
         <ul>
             <li>進入GoogleClassroom請使用<strong>龍華國小帳號</strong></li>
-            <li>點一下就可以複製<a href="javascript:void(0)" onclick="copyEvent('copy')"><strong id="copy">@mail.lhps.kh.edu.tw</strong></a></li>
+            <li>點一下右邊藍色文字就可以複製<a href="javascript:void(0)" onclick="copyEvent('copy')"><strong id="copy">@mail.lhps.kh.edu.tw</strong></a></li>
             <li>按照功課表的時間，進入對應的課程</li>
             <li>手機、平板請安裝<a href="https://support.google.com/edu/classroom/answer/6118412?hl=zh-Hant&ref_topic=10308276" target=_blank>GoogleClassroom APP</a>與<a href="https://support.google.com/meet/answer/7291339?hl=zh-Hant&ref_topic=7306097&co=GENIE.Platform%3DiOS&oco=1" target=_blank>GoogleMeet APP</a></li>
         </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-        <button type="button" class="btn btn-primary" onclick="window.open('https://classroom.google.com/a/mail.lhps.kh.edu.tw/')">我知道了!</button>
+        <button type="button" class="btn btn-primary" onclick="copy_and_go('copy')">我知道了!</button>
       </div>
     </div>
   </div>

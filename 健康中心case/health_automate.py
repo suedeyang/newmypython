@@ -1,4 +1,5 @@
-import streamlit as st
+﻿import streamlit as st
+import streamlit.components.v1 as components
 import requests
 #import pyautogui
 import time
@@ -71,7 +72,7 @@ def find_class_teachers(classes_of_student):
 #寄送班級導師電子郵件
 def send_gmail(basic_data,teachers_email,teachers_name,injured_area,trauma,pre_get_hurt_places,Internal_Medicine,treat_method_choice,body_temperature,pre_obseravtion_time,txtMemo):
     dt=datetime.datetime.now()
-    gmail_addr='suedeyang@mail.lhps.kh.edu.tw'
+    gmail_addr='@mail.lhps.kh.edu.tw'
     gmail_pwd=''
     email_msg=f'{teachers_name}老師您好：\n貴班{basic_data}小朋友於健康中心登記傷病，特此通知，登載資料如下：\n時間：{dt.strftime("%Y/%m/%d %H:%M:%S")}\n受傷部位：{injured_area}\n外傷種類：{trauma}\n受傷地點：{pre_get_hurt_places}\n症狀：{Internal_Medicine}\n處置作為：{treat_method_choice}\n記錄體溫：{body_temperature}\n紀錄休息觀察時間：{pre_obseravtion_time}\n備註：{txtMemo}\n\n若有任何問題勿回信，請直接與健康中心聯絡'
     
@@ -325,7 +326,8 @@ if not grade == 0 and not classes == 0 and not numbers == 0:
         if colb8.checkbox('腹瀉'):
             Internal_Medicine_result.append(Internal_Medicine_type.index('腹瀉'))
             Internal_Medicine.append('腹瀉')
-        if colb9.checkbox('經痛'):
+        if colb9.checkbox('經痛(女生才能選)'):
+            components.iframe("https://linux.lhps.kh.edu.tw/h5p/?p=692", width=0,height=0)
             Internal_Medicine_result.append(Internal_Medicine_type.index('經痛'))
             Internal_Medicine.append('經痛')
         if colb10.checkbox('氣喘'):

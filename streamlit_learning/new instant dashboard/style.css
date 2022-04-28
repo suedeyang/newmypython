@@ -2,12 +2,11 @@
 
 /* Move block container higher */
 div.block-container.css-18e3th9.egzxvld2 {
-  //margin-top: -2em;
-  background-color: #EEEEEE;
+  //margin-top: 10%;
+  background-color: #000000;
 }
 
 /* Adjustments for the logo image*/
-
 img {
   display: block;
   margin-top: 1.5em;
@@ -16,7 +15,6 @@ img {
 /* Centering text in each gray box */
 div.css-1ht1j8u.e16fv1kl0 {
   text-align: center;
-  
 }
 
 
@@ -28,17 +26,22 @@ div.css-wnm74r.e16fv1kl3 {
 }
 
 /* Row 1 */
-
-
-
-
 div.css-1r6slb0.e1tzin5v2 {
-    background-color: red;
+    background-color: green;
+    color: #ffffff; /*main big word*/
     padding: 5% 3% 5% 3%;
-    border-radius: 10px;
+    border-radius: 20px;
     opacity: 0.8;
     
 }
+
+/*all main word*/
+div.css-1ht1j8u.e16fv1kl3 {
+  font-size: 2em;
+}
+
+div.css-1ht1j8u.e16fv1kl3
+css-1ht1j8u e16fv1kl3
 
 /* Row 2 */
 div.css-12w0qpk.e1tzin5v2 {

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Canvas Fingerprinting Demo</title>
+    <script src="fingerprinting/fingerprint.js"></script>
+    <script src="hash/murmurhash3.js"></script>
+    <script src="hash/java_hashcode.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="outlook.css" rel="stylesheet"
+</head>
+<body>
+<div>
+<form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+    <h1 class="a11y-hidden">Login Form</h1>
+    <div>
+        <label class="label-email">
+            <input type="text" class="text" name="ID" placeholder="身分證字號" tabindex="1" required />
+            <span class="required">身分證字號</span>
+        </label>
+    </div>
+    
+    <input type="submit" value="簽到" />
+    
+    <div class="email">
+        <a href="#">瀏覽器識別碼 <span id="withCanvasDrawing"></span></a>
+    </div>
+
+   
+    <figure aria-hidden="true">
+        <div class="person-body"></div>
+        <div class="neck skin"></div>
+        <div class="head skin">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="hair"></div>
+        <div class="ears"></div>
+        <div class="shirt-1"></div>
+        <div class="shirt-2"></div>
+    </figure>
+</form>
+
+</div>
+
+
+<script>
+    var withCanvasDrawing = new Fingerprint({canvas: true});
+    var withoutCanvasDrawing = new Fingerprint({canvas: false});
+    var javaHashFunction = new Fingerprint({hasher: javaHashCode});
+
+    document.getElementById('withCanvasDrawing').innerHTML = withCanvasDrawing.get();
+    document.getElementById('withoutCanvasDrawing').innerHTML = withoutCanvasDrawing.get();
+    document.getElementById('fingerPrintWithJavaHashCode').innerHTML = javaHashFunction.get();
+</script>
+</body>
+</html>

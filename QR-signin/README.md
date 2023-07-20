@@ -1,3 +1,18 @@
+canvas-fingerprinting
+https://github.com/artem0/canvas-fingerprinting/tree/master
+
+使用 JS 追蹤訪客﹍裝置指紋辨識原理 + 實用工具介紹
+https://www.wfublog.com/2020/11/js-track-user-device-browser-fingerprint.html
+
+Connecting your HTML forms to a Google spreadsheet
+https://dev.to/kromate/connecting-your-html-forms-to-a-google-spreadsheet-p9h
+
+表單外觀
+https://codepen.io/alvaromontoro/pen/JjoWVmx
+![image](https://github.com/suedeyang/newmypython/assets/12782178/64647c8e-a1fa-4771-b33e-88b884d8e8bd)
+
+
+
 #### Demo for Canvas fingerprinting
 
 Here you can find JS library for fetching canvas fingerprinting, testing of preventing with addons and experiment with
